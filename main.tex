@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+
+% Preamble with packages used
+\include{preamble}
+
+% Beginning of the document
+\begin{document}
+
+% Bibliography Name
+\renewcommand\refname{Bibliography}
+
+% Title Page
+\include{./includes/title}
+% Declaration On Oath 
+\include{./includes/oath}
+% German Abstract
+\include{./includes/abstract_de}
+% English Abstract
+\include{./includes/abstract_en}
+% Link to the accompanying source code
+\include{./includes/source}
+% Acknowledgements (optional)
+% \include{./includes/acknowledgements.tex}
+% Table Of Contents
+\tableofcontents
+% Content
+% Introduction
+\include{./includes/contents/introduction}
+% SotA
+\include{./includes/contents/sota}
+% Methodology
+\include{./includes/contents/methodology}
+% Research Design (& Probes ?)
+\include{./includes/contents/research}
+% Results
+\include{./includes/contents/results}
+% Discussion
+\include{./includes/contents/discussion}
+% Conclusion
+\include{./includes/contents/conclusion}
+% Sample contents (figures, tables, abbreviations)
+% \include{./includes/contents/sample}
+% List of figures
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{section}{List of Figures}
+\listoffigures
+% List of tables
+\newpage
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{section}{List of Tables}
+\listoftables
+% List of abbreviations
+\newpage
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{section}{List of Abbreviations}
+\printnoidxglossary[type=\acronymtype,title=List of Abbreviations,style=list,nonumberlist]
+% Bibliography
+\newpage
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{section}{Bibliography}
+\begin{singlespace}
+\bibliographystyle{acm}
+\bibliography{sources}
+\end{singlespace}
+% Appendix
+\include{./includes/appendix}
+\end{document}

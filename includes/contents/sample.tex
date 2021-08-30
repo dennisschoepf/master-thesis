@@ -1,0 +1,66 @@
+\section{Samples}
+
+This is a section with samples of possible contents within the master thesis.
+
+\subsection{Citations}
+
+Example as follows \cite{wiki}.
+
+\subsection{Figures}
+
+Example as follows, the figure can be referenced like so: Figure \ref{fig:samples-logo}.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics{fhsalzburg}
+  \caption{Logo of the University of Applied Sciences, Salzburg}
+  \label{fig:samples-logo}
+\end{figure}
+
+\subsection{Tables}
+
+Example as follows.
+
+\begin{table}[h]
+  \begin{tabularx}{\textwidth}{|X|X|X|}
+    \hline
+    \textbf{Column Head 1} & \textbf{Column Head 2} & \textbf{Column Head 3} \\ \hline \hline
+    Column Cell 1 & Column Cell 2 & Column Cell 3 \\ \hline
+    Column Cell 1 & Column Cell 2 & Column Cell 3 \\ \hline
+    Column Cell 1 & Column Cell 2 & Column Cell 3 \\ \hline
+  \end{tabularx}
+  \caption{\label{tab:samples-table}A sample table}
+\end{table}
+
+\subsection{Code}
+
+Example as follows. This is inline code: \verb|const code = 'Code';|. And this is is multiline code, it is rather ugly though so maybe just use pictures instead.
+
+\begin{lstlisting}
+interface Props {
+  title: string;
+}
+
+const getProps = (): Props => {
+  return { title: 'This is the title'};
+}
+\end{lstlisting}
+
+\subsection{Abbreviations}
+
+Example as follows, \gls{it} is an abbreviation.
+
+\subsection{Footnotes}
+
+Example as follows \footnote{This is a footnote}.
+
+\subsection{Direct Quotations}
+
+Ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. \cite{wiki}
+
+There are direct quotations with less than 3 lines: \enquote{Lorem ipsum dolor sit amet} \cite{wiki} or with more than 3 lines:
+
+\begin{quote}
+  \textit{Ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.} \cite{wiki}
+\end{quote}
+

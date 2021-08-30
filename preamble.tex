@@ -1,0 +1,77 @@
+% Defaults
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+% Appearance
+\usepackage[a4paper, margin=2.5cm, bindingoffset=0.5cm]{geometry}
+\usepackage{microtype}
+\usepackage{lmodern}
+\usepackage[english=british, autostyle]{csquotes}
+\setlength{\skip\footins}{18pt}
+
+% Further packages
+\usepackage[automark,autooneside=false,markcase=noupper,singlespacing=true]{scrlayer-scrpage}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage{tabularx}
+\usepackage{caption}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{verbatim}
+\usepackage{setspace}
+\usepackage[acronym]{glossaries}
+\usepackage[toc,page]{appendix}
+\usepackage{xcolor}
+\usepackage{textcomp}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{setspace}
+\usepackage{xurl}
+\usepackage{longtable}
+\usepackage[normalem]{ulem}
+\usepackage{lscape}
+\usepackage{booktabs}
+\usepackage[htt]{hyphenat}
+\useunder{\uline}{\ul}{}
+
+% Header Configuration
+\pagestyle{scrheadings}
+\clearpairofpagestyles
+\ihead{\leftmark}
+\ohead{\pagemark}
+
+% Headline Configuration
+\titleformat*{\section}{\large\bfseries}
+\titleformat*{\subsection}{\normalsize\bfseries}
+\titleformat*{\subsubsection}{\small\bfseries}
+
+% Line Spacing
+\linespread{1.5}
+
+% Lists
+\setlist[itemize]{noitemsep, topsep=6pt}
+\setlist[enumerate]{noitemsep, topsep=6pt}
+
+% Quotes
+\expandafter\def\expandafter\quote\expandafter{\quote\singlespacing}
+
+
+% Abbreviations
+\newacronym{ctf}{CTF}{Capture The Flag}
+\newacronym{lan}{LAN}{Local Area Network}
+\newacronym{rtd}{RtD}{Research through Design}
+\newacronym{hci}{HCI}{Human-Computer Interaction}
+\newacronym{ide}{IDE}{Integrated Development Environment}
+\newacronym{html}{HTML}{Hypertext Markup Language}
+\newacronym{css}{CSS}{Cascading Stylesheets}
+\newacronym{api}{API}{Application Programming Interface}
+\newacronym{npm}{NPM}{Node Package Manager}
+\newacronym{url}{URL}{Uniform Resource Locator}
+
+\makenoidxglossaries
+
+\glsaddall
+
